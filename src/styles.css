@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(/web/WeatherApp/img_weather/6192816.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.app-container {
+  font-family: "Roboto", sans-serif;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 440px;
+  border: 1px solid rgb(79, 182, 223);
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: rgba(25, 28, 42, 0.747);
+  min-height: 400px;
+}
+.weather-det {
+  font-weight: 300;
+  position: relative;
+  top: 2rem;
+  left: 65px;
+  color: rgb(116, 198, 230);
+  width: 80%;
+  height: 50%;
+}
+h2 {
+  position: relative;
+  top: 40px;
+  font-size: 26pt;
+  font-weight: 400;
+}
+.tem {
+  position: relative;
+  top: 40px;
+  font-size: 26pt;
+  font-weight: 400;
+}
+.time {
+  position: relative;
+  top: 40px;
+  font-size: 14pt;
+  font-weight: 400;
+  color: rgba(116, 198, 230, 0.521);
+}
+
+.humidity {
+  position: relative;
+  top: 60px;
+  font-size: 14pt;
+  font-weight: 300;
+}
+
+.wind {
+  position: relative;
+  top: 60px;
+  font-size: 14pt;
+  font-weight: 300;
+}
+.form {
+  position: relative;
+  top: 50px;
+  left: 90px;
+}
+.input-city {
+  border: none;
+  border-bottom: 2px solid rgba(16, 119, 160);
+  color: rgb(116, 198, 230);
+  background: transparent;
+  outline: none;
+  font-size: 16pt;
+  padding: 5px;
+  margin: 5px;
+  width: 200px;
+  line-height: 1.15;
+}
+
+input::placeholder {
+  color: transparent;
+}
+
+.submit-button {
+  position: absolute;
+  bottom: 5px;
+  left: 210px;
+  background-color: transparent;
+  border: none;
+  color: rgba(16, 119, 160);
+  font-size: 22pt;
+
+  font-weight: bold;
+  padding: 5px 15px;
+}
+.submit-button:hover {
+  color: rgba(116, 198, 230);
+  transition: all 0.2s ease-in-out;
+}
+
+.has-float-label input:focus {
+  border-bottom: 2px solid rgb(116, 198, 230);
+  transition: all 0.2s;
+}
+
+.has-float-label {
+  display: block;
+  position: relative;
+  padding: 12px 0 8px 0;
+}
+
+.has-float-label input:placeholder-shown:focus {
+  border-bottom: 2px solid rgba(116, 198, 230);
+}
+
+.has-float-label input:placeholder-shown:not(:focus) + .label {
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 18px;
+  top: 15px;
+  left: 5px;
+  bottom: 1px;
+  color: rgba(16, 119, 160, 0.745);
+}
+
+.has-float-label input:focus ~ .label {
+  color: rgb(116, 198, 230);
+  font-size: 12px;
+}
+
+.has-float-label label,
+.has-float-label > .label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  cursor: text;
+  font-size: 12px;
+  color: rgba(116, 198, 230, 0);
+  transition: all 0.2s;
+  pointer-events: none;
+}
